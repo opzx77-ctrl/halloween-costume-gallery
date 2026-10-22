@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="description" content="2026 할로윈 코스튬 추천 카드 갤러리 — 올해 트렌드·애니·영화 캐릭터부터 구미호·도깨비 같은 한국 괴물과 한국민속촌 귀신까지 42종, 캐릭터당 참고 사진 3장. 난이도·예산·준비물·메이크업 포인트와 쿠팡 준비물 검색까지 한 번에.">
+<meta name="description" content="2026 할로윈 코스튬 추천 카드 갤러리 — 올해 트렌드·애니·영화 캐릭터부터 구미호·도깨비 같은 한국 괴물과 한국민속촌 귀신까지 42종, 캐릭터당 참고 사진 3장. 질문 3개로 추천받기, 운명 룰렛, 난이도·예산·준비물·쿠팡 검색까지 한 번에.">
 <link rel="canonical" href="https://opzx77-ctrl.github.io/halloween-costume-gallery/">
 <meta name="theme-color" content="#1A0F2E">
 <link rel="manifest" href="manifest.webmanifest">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="할로윈 코스튬 추천 2026">
 <meta property="og:title" content="할로윈 코스튬 추천 — 2026 트렌드 & 한국 괴물">
-<meta property="og:description" content="트렌드·애니·영화 캐릭터부터 한국 괴물·민속촌 귀신까지 42종 카드 갤러리, 캐릭터당 참고 사진 3장. 준비물·메이크업·쿠팡 검색까지.">
+<meta property="og:description" content="트렌드·애니·영화 캐릭터부터 한국 괴물·민속촌 귀신까지 42종 카드 갤러리, 캐릭터당 참고 사진 3장. 질문 3개로 추천받기와 운명 룰렛까지.">
 <meta property="og:url" content="https://opzx77-ctrl.github.io/halloween-costume-gallery/">
 <meta property="og:image" content="https://opzx77-ctrl.github.io/halloween-costume-gallery/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -26,27 +26,30 @@
 <style>
 :root{
   --bg:#FFF7ED; --bg2:#FFEDD5; --surface:#FFFFFF; --surface2:#FFF1E6;
-  --text:#1C1410; --muted:#7A6A60; --line:#F0DDCC;
-  --orange:#E85D04; --orange2:#F48C06; --purple:#5A189A; --green:#2A9D2A; --blood:#C1121F;
+  --text:#1C1410; --muted:#6B5340; --line:#F0DDCC;
+  --orange:#D35400; --orange2:#F48C06; --purple:#5A189A; --green:#2A9D2A; --blood:#C1121F;
   --chip:#FFE8D6; --shadow:0 10px 30px rgba(232,93,4,.12);
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#0E0B14; --bg2:#1A1025; --surface:#1E1829; --surface2:#261E35; --text:#FFF6ED; --muted:#B8A99E; --line:#342A45; --chip:#2E233F; --shadow:0 10px 30px rgba(0,0,0,.45); }
+  :root{ --bg:#0E0B14; --bg2:#1A1025; --surface:#1E1829; --surface2:#261E35; --text:#FFF6ED; --muted:#C4B4A6; --line:#342A45; --chip:#2E233F; --orange:#F48C06; --shadow:0 10px 30px rgba(0,0,0,.45); }
 }
 *{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 a{color:inherit}
 .top{ background: radial-gradient(800px 300px at 15% -50px, #FFB70333, transparent), linear-gradient(135deg,#1A0F2E 0%,#3D0C4A 38%,#7B1E00 100%); color:#FFF7ED; padding:28px 18px 22px; position:relative; overflow:hidden}
 .top-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
 .moon{position:absolute;right:22px;top:18px;font-size:64px;opacity:.95;filter:drop-shadow(0 0 24px #FFD60A88)}
 .datepill{display:inline-flex;gap:8px;align-items:center;background:#FFFFFF1E;border:1px solid #FFFFFF33;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700}
 .datepill b{color:#FFB703}
-h1{font-family:"Black Han Sans",sans-serif;font-weight:400;font-size:42px;line-height:1.05;margin:14px 0 8px;letter-spacing:-.02em}
+h1{font-family:"Black Han Sans",sans-serif;font-weight:400;font-size:40px;line-height:1.12;margin:14px 0 8px;letter-spacing:-.02em;word-break:keep-all}
 h1 span{color:#FFB703}
-.lead{margin:0;max-width:640px;color:#FFE8D6;font-size:15px}
-.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-.stat{background:#FFFFFF14;border:1px solid #FFFFFF22;border-radius:14px;padding:10px 14px;min-width:108px}
-.stat strong{display:block;font-size:20px;line-height:1;color:#fff}.stat small{color:#FFD8B8;font-size:12px}
+.lead{margin:0;max-width:640px;color:#FFE8D6;font-size:16px;line-height:1.65}
+.lead b{color:#FFB703}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+@media(min-width:760px){.stats{display:flex;flex-wrap:wrap;gap:10px}}
+.stat{background:#FFFFFF14;border:1px solid #FFFFFF22;border-radius:14px;padding:9px 12px}
+@media(min-width:760px){.stat{min-width:108px;padding:10px 14px}}
+.stat strong{display:block;font-size:19px;line-height:1.15;color:#fff}.stat small{color:#FFD8B8;font-size:11.5px}
 .wrap{max-width:1120px;margin:0 auto;padding:18px 16px 40px}
 .toolbar{position:sticky;top:0;z-index:20;background:var(--bg);padding:12px 0 10px;border-bottom:1px solid var(--line)}
 .search{display:flex;gap:8px}
@@ -57,25 +60,26 @@ h1 span{color:#FFB703}
 .chip.active{background:var(--text);color:var(--bg);border-color:var(--text)}
 .chip.korea.active{background:#0B6B3A;color:#fff;border-color:#0B6B3A}
 .sectionhead{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:22px 0 12px}
-.sectionhead h2{margin:0;font-size:22px;letter-spacing:-.03em}.sectionhead p{margin:0;color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:620px){.grid{grid-template-columns:1fr 1fr} h1{font-size:54px}}
+.sectionhead h2{margin:0;font-size:24px;letter-spacing:-.03em}.sectionhead p{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(min-width:620px){.grid{gap:16px} h1{font-size:54px}}
 @media(min-width:960px){.grid{grid-template-columns:1fr 1fr 1fr}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;font-family:inherit;color:inherit;width:100%}
 .card:hover{transform:translateY(-2px)} .card{transition:transform .18s}
 .visual{aspect-ratio:4/3;position:relative;overflow:hidden;background:#241631}
 .visual img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .emoji-chip{position:absolute;right:10px;bottom:10px;background:#000000B8;color:#fff;font-size:15px;line-height:1;padding:7px 9px;border-radius:999px;backdrop-filter:blur(2px)}
-.badge{position:absolute;left:12px;top:12px;background:#111;color:#FFB703;font-size:11px;font-weight:900;padding:6px 9px;border-radius:999px;letter-spacing:.02em}
+.badge{position:absolute;left:12px;top:12px;background:#111;color:#FFB703;font-size:11px;font-weight:900;padding:6px 9px;border-radius:999px;letter-spacing:.02em;max-width:calc(100% - 58px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .badge.hot{background:var(--blood);color:#fff}.badge.kr{background:#063;color:#D1FAE5}.badge.new{background:#fff;color:#111}
 .fav{position:absolute;right:10px;top:10px;width:36px;height:36px;border-radius:50%;border:0;background:#FFFFFFE6;font-size:18px;cursor:pointer}
-.body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
-.cat{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
-.name{font-size:20px;font-weight:900;line-height:1.2;letter-spacing:-.03em}
+.body{padding:13px 13px 15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.cat{font-size:10.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.name{font-size:17px;font-weight:900;line-height:1.25;letter-spacing:-.03em}
 .origin{font-size:13px;color:var(--muted);font-weight:700}
-.desc{font-size:14px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
-.pill{font-size:12px;font-weight:700;background:var(--surface2);border:1px solid var(--line);padding:6px 8px;border-radius:999px}
+.desc{font-size:13.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.meta{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.pill{font-size:11.5px;font-weight:700;background:var(--surface2);border:1px solid var(--line);padding:5px 8px;border-radius:999px}
+@media(min-width:620px){.body{padding:16px 16px 18px;gap:8px}.cat{font-size:11px}.name{font-size:20px}.desc{font-size:14px;-webkit-line-clamp:3}.pill{font-size:12px;padding:6px 8px}}
 .dots{color:var(--orange);letter-spacing:2px}
 .korea-banner{margin:26px 0 0;background:#0B2E1F;color:#ECFDF5;border-radius:20px;padding:20px;display:grid;gap:14px}
 @media(min-width:760px){.korea-banner{grid-template-columns:1.2fr .8fr;align-items:center}}
@@ -88,6 +92,8 @@ h1 span{color:#FFB703}
 .ad-label{display:block;font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--muted);margin-bottom:10px}
 .ad-box{display:flex;justify-content:center;align-items:flex-start;min-height:250px}
 .ad-box.banner{min-height:50px;align-items:center}
+.ad-box.leaderboard{min-height:90px;align-items:center;overflow:hidden}
+.ad-section.ad-top{margin:0;border-radius:0;border-left:0;border-right:0;border-top:0;padding:10px 12px 14px}
 .ad-box ins.kakao_ad_area{margin:0 auto}
 footer{color:var(--muted);font-size:12px;padding:8px 2px 0;line-height:1.7}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.62);display:none;align-items:flex-end;justify-content:center;z-index:120;padding:0}
@@ -115,6 +121,85 @@ footer{color:var(--muted);font-size:12px;padding:8px 2px 0;line-height:1.7}
 .chip.kids.active{background:#DB2777;color:#fff;border-color:#DB2777}
 .tip-jump{display:inline-flex;align-items:center;gap:6px;margin-top:14px;background:#FFB703;color:#1C1410;font-weight:900;font-size:14px;text-decoration:none;padding:10px 16px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 .tip-jump:active{transform:scale(.98)}
+.hero-ctas{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.hero-cta{display:inline-flex;align-items:center;gap:6px;font-weight:900;font-size:15px;text-decoration:none;padding:13px 18px;border-radius:999px;border:0;cursor:pointer;font-family:inherit}
+.hero-cta.primary{background:#FF6D00;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.hero-cta.ghost{background:#FFFFFF1E;color:#FFF7ED;border:1px solid #FFFFFF44}
+.hero-cta:active{transform:scale(.98)}
+.deadline{margin-top:12px;background:#C1121F;color:#fff;font-weight:800;font-size:13px;padding:9px 14px;border-radius:12px;display:inline-block}
+.finder{margin:18px 0 4px;background:var(--surface);border:2px solid var(--orange);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+.finder h2{margin:0;font-size:22px;letter-spacing:-.03em;word-break:keep-all;line-height:1.3}
+.finder>p{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.65}
+.finder-how{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.finder-how span{flex:1;min-width:96px;text-align:center;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:8px 6px;font-size:12.5px;font-weight:800;line-height:1.4}
+.finder-how span b{color:var(--orange);display:block;font-size:13px}
+.finder-q{margin-top:18px}
+.finder-q b{display:block;font-size:15px;margin-bottom:2px}
+.finder-q-hint{display:block;font-size:12.5px;color:var(--muted);margin-bottom:8px}
+.finder-opts{display:flex;gap:8px;flex-wrap:wrap}
+.fopt{border:1.5px solid var(--line);background:var(--surface2);color:var(--text);padding:10px 14px;border-radius:999px;font-weight:800;font-size:14px;cursor:pointer;font-family:inherit;min-height:44px}
+.fopt.on{background:var(--orange);color:#fff;border-color:var(--orange)}
+.finder-go{margin-top:16px;width:100%;background:var(--text);color:var(--bg);border:0;padding:15px;border-radius:14px;font-weight:900;font-size:16px;cursor:pointer;font-family:inherit;min-height:52px}
+.finder-go:active{transform:scale(.99)}
+.finder-results{display:none;margin-top:14px}
+.finder-results.show{display:block}
+.finder-results h3{margin:0 0 10px;font-size:16px}
+.fresult{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--line);border-radius:14px;padding:10px;cursor:pointer;font-family:inherit;color:inherit;margin-bottom:8px}
+.fresult img{width:64px;height:64px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.fresult b{display:block;font-size:15px}
+.fresult span{font-size:13px;color:var(--muted)}
+.finder-empty{color:var(--muted);font-size:14px}
+.sortbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.sortbar select{padding:10px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--text);font-weight:700;font-size:14px;min-height:44px;font-family:inherit}
+.togglebtn{border:1.5px solid var(--line);background:var(--surface);color:var(--text);padding:10px 14px;border-radius:999px;font-weight:800;font-size:14px;cursor:pointer;font-family:inherit;min-height:44px}
+.togglebtn.on{background:#C1121F;color:#fff;border-color:#C1121F}
+.randombtn{border:0;background:linear-gradient(135deg,#FF8A00,#E8590C 45%,#C1121F);color:#fff;padding:11px 18px;border-radius:999px;font-weight:900;font-size:15px;cursor:pointer;font-family:inherit;min-height:46px;box-shadow:0 6px 20px rgba(193,18,31,.38),0 0 0 2px #FFB70366;animation:rpulse 1.7s ease-in-out 3}
+.randombtn:active{transform:scale(.97)}
+@keyframes rpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@media(prefers-reduced-motion:reduce){.randombtn{animation:none}}
+.rmodal{position:fixed;inset:0;background:rgba(12,4,24,.86);display:none;align-items:center;justify-content:center;z-index:60;padding:16px}
+.rmodal.open{display:flex}
+.rbox{width:100%;max-width:430px;background:linear-gradient(165deg,#2A1150 0%,#4A0E2E 58%,#7B1E00 100%);border:1px solid #FFB70366;border-radius:26px;padding:24px 20px 22px;color:#FFF7ED;text-align:center;position:relative;overflow:hidden;box-shadow:0 26px 70px rgba(0,0,0,.55)}
+.rclose{position:absolute;right:12px;top:12px;width:36px;height:36px;border-radius:50%;border:0;background:#FFFFFF22;color:#fff;font-size:16px;cursor:pointer;z-index:6}
+.rtitle{font-family:"Black Han Sans",sans-serif;font-weight:400;font-size:27px;margin:0;letter-spacing:-.01em;word-break:keep-all}
+.rtitle span{color:#FFB703}
+.rsub{margin:4px 0 16px;color:#FFD8B8;font-size:13.5px}
+.rframe{background:#14081F;border:3px solid #FFB703;border-radius:18px;padding:8px;box-shadow:0 0 34px #FFB70344,inset 0 0 22px #00000088}
+.bulbs{display:flex;justify-content:space-between;padding:3px 6px}
+.bulbs span{width:9px;height:9px;border-radius:50%;background:#FFB703;box-shadow:0 0 8px #FFB703;opacity:.45;transition:opacity .3s}
+.bulbs span:nth-child(even){background:#FF6D00;box-shadow:0 0 8px #FF6D00}
+.rbox.live .bulbs span{opacity:1;animation:bulbA .4s ease-in-out infinite alternate}
+.rbox.live .bulbs span:nth-child(even){animation-delay:.4s}
+.rbox.jackpot .bulbs span{opacity:1}
+@keyframes bulbA{from{opacity:.25}to{opacity:1}}
+.rwin{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#241631}
+.rwin img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.rwin.spinning img{filter:blur(2px) saturate(1.25);transform:scale(1.04)}
+.rwin.done{box-shadow:0 0 0 3px #FFB703,0 0 46px #FFB70399}
+.rwin.done img{animation:rpop .45s cubic-bezier(.2,1.6,.4,1)}
+@keyframes rpop{0%{transform:scale(1.12)}100%{transform:scale(1)}}
+.rstamp{position:absolute;right:10px;top:10px;background:#C1121F;color:#fff;font-weight:900;font-size:14px;padding:7px 12px;border-radius:8px;transform:rotate(10deg) scale(0);box-shadow:0 8px 20px rgba(0,0,0,.45);z-index:3}
+.rstamp.show{animation:stampIn .38s cubic-bezier(.2,1.9,.4,1) forwards}
+@keyframes stampIn{to{transform:rotate(-7deg) scale(1)}}
+.rname{font-family:"Black Han Sans",sans-serif;font-size:25px;line-height:1.25;margin:16px 0 0;min-height:32px;word-break:keep-all}
+.rname.pop{animation:rnamePop .45s ease}
+@keyframes rnamePop{0%{transform:scale(.55);opacity:0}60%{transform:scale(1.13)}100%{transform:scale(1);opacity:1}}
+.rmeta{color:#FFD8B8;font-size:13.5px;margin-top:3px;min-height:21px}
+.rbtns{display:flex;gap:8px;margin-top:16px}
+.rbtn{flex:1;border:0;border-radius:14px;padding:15px 10px;font-weight:900;font-size:15px;cursor:pointer;font-family:inherit;min-height:52px}
+.rbtn:active{transform:scale(.98)}
+.rbtn:disabled{opacity:.65;cursor:default}
+.rbtn.spin{background:linear-gradient(135deg,#FFB703,#FF6D00);color:#2A1503;box-shadow:0 10px 24px rgba(255,109,0,.45)}
+.rbtn.detail{background:#fff;color:#1C1410}
+.confetti{position:absolute;top:-18px;width:8px;height:13px;border-radius:2px;z-index:5;pointer-events:none;animation-name:cfall;animation-timing-function:ease-in;animation-fill-mode:forwards}
+@keyframes cfall{to{transform:translateY(640px) rotate(680deg);opacity:.85}}
+@media(prefers-reduced-motion:reduce){.rbox.live .bulbs span{animation:none}.rwin.done img,.rname.pop{animation:none}}
+.bottombar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;gap:8px;box-shadow:0 -6px 24px rgba(0,0,0,.12)}
+.bottombar button{flex:1;padding:13px 10px;border-radius:12px;font-weight:900;font-size:14px;cursor:pointer;font-family:inherit;min-height:48px}
+.bottombar .bb-main{background:#FF6D00;color:#fff;border:0}
+.bottombar .bb-sub{background:var(--surface2);color:var(--text);border:1.5px solid var(--line)}
+body{padding-bottom:76px}
+@media(min-width:760px){.bottombar{max-width:560px;left:50%;transform:translateX(-50%);border-radius:16px 16px 0 0;border-left:1px solid var(--line);border-right:1px solid var(--line)}}
 #tips{scroll-margin-top:132px}
 .tips-sub{margin:26px 0 0;font-size:13px;color:var(--muted)}
 .tip ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
@@ -123,22 +208,39 @@ footer{color:var(--muted);font-size:12px;padding:8px 2px 0;line-height:1.7}
 @media(min-width:760px){.folk-banner{grid-template-columns:1.2fr .8fr;align-items:start}}
 .folk-banner h3{margin:0;font-size:22px}.folk-banner p{margin:6px 0 0;color:#FECDD3;font-size:14px}
 .folk-list{display:grid;gap:8px}.folk-list div{background:#FFFFFF12;border:1px solid #FFFFFF24;border-radius:12px;padding:9px 12px;font-size:13px}.folk-list b{color:#FDA4AF}
+.steps{display:grid;gap:10px;margin:2px 0 16px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{display:flex;gap:11px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.step .n{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.step b{display:block;font-size:15px;line-height:1.3}
+.step span{font-size:13px;color:var(--muted);line-height:1.45}
+.sortbar{padding:2px 0 0}
 
 .sharebtn{margin-top:10px;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--text);font-size:13.5px;font-weight:700;cursor:pointer}
-.adfit-sticky{position:fixed;left:50%;transform:translateX(-50%);bottom:0;z-index:80;width:320px;height:50px;text-align:center}
-body{padding-bottom:58px}
-
-.adfit-leader{display:none;text-align:center;margin:0 auto 6px}@media(min-width:760px){.adfit-leader{display:block}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "2026 할로윈 코스튬 추천 42종", "numberOfItems": 42, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "헌트릭스 — 루미·미라·조이"}, {"@type": "ListItem", "position": 2, "name": "니키"}, {"@type": "ListItem", "position": 3, "name": "페니와이즈"}, {"@type": "ListItem", "position": 4, "name": "오디세우스 & 그리스 신"}, {"@type": "ListItem", "position": 5, "name": "버디 더 유니콘 & 니도"}, {"@type": "ListItem", "position": 6, "name": "마녀"}, {"@type": "ListItem", "position": 7, "name": "뱀파이어"}, {"@type": "ListItem", "position": 8, "name": "웬즈데이 아담스"}, {"@type": "ListItem", "position": 9, "name": "배트맨 & DC 히어로"}, {"@type": "ListItem", "position": 10, "name": "스파이더맨"}, {"@type": "ListItem", "position": 11, "name": "마리오"}, {"@type": "ListItem", "position": 12, "name": "마이클 잭슨 — Thriller"}, {"@type": "ListItem", "position": 13, "name": "엘파바 & 글린다"}, {"@type": "ListItem", "position": 14, "name": "우디·버즈·제시"}, {"@type": "ListItem", "position": 15, "name": "말장난 커플 DIY"}, {"@type": "ListItem", "position": 16, "name": "구미호"}, {"@type": "ListItem", "position": 17, "name": "도깨비"}, {"@type": "ListItem", "position": 18, "name": "처녀귀신"}, {"@type": "ListItem", "position": 19, "name": "저승사자"}, {"@type": "ListItem", "position": 20, "name": "물귀신"}, {"@type": "ListItem", "position": 21, "name": "달걀귀신"}, {"@type": "ListItem", "position": 22, "name": "장산범"}, {"@type": "ListItem", "position": 23, "name": "킹덤 갓 쓴 좀비"}, {"@type": "ListItem", "position": 24, "name": "묘귀 — 고양이 귀신"}, {"@type": "ListItem", "position": 25, "name": "살귀 — 살귀옥의 옥사 귀신"}, {"@type": "ListItem", "position": 26, "name": "식귀 — 혈안식귀의 붉은 눈"}, {"@type": "ListItem", "position": 27, "name": "암행어사 — 마패 출두"}, {"@type": "ListItem", "position": 28, "name": "고죠 사토루"}, {"@type": "ListItem", "position": 29, "name": "네즈코"}, {"@type": "ListItem", "position": 30, "name": "루피 — 기어5 니카"}, {"@type": "ListItem", "position": 31, "name": "피카츄"}, {"@type": "ListItem", "position": 32, "name": "슬픔이 & 감정 친구들"}, {"@type": "ListItem", "position": 33, "name": "모아나"}, {"@type": "ListItem", "position": 34, "name": "엘사"}, {"@type": "ListItem", "position": 35, "name": "호그와트 학생"}, {"@type": "ListItem", "position": 36, "name": "크리퍼"}, {"@type": "ListItem", "position": 37, "name": "하츄핑"}, {"@type": "ListItem", "position": 38, "name": "카피바라"}, {"@type": "ListItem", "position": 39, "name": "풍선 티라노"}, {"@type": "ListItem", "position": 40, "name": "우주비행사"}, {"@type": "ListItem", "position": 41, "name": "타코 & 음식 가족 세트"}, {"@type": "ListItem", "position": 42, "name": "어몽어스 크루원"}]}</script>
 </head>
 <body>
+<section class="ad-section ad-top" aria-label="광고">
+  <span class="ad-label">AD · 광고</span>
+  <div class="ad-box leaderboard">
+    <ins class="kakao_ad_area" style="display:none;"
+      data-ad-unit="DAN-CmYsj51KjByZCupy"
+      data-ad-width="728"
+      data-ad-height="90"></ins>
+  </div>
+</section>
 <header class="top">
   <div class="moon">🎃</div>
   <div class="top-inner">
     <span class="datepill">📅 2026 할로윈 · 10월 31일 토요일 · <b id="dday">D-10</b></span>
-    <h1>올해 뭐 입지?<br><span>할로윈 코스튬</span> 추천</h1>
-    <p class="lead">인스타·구글 트렌드에서 진짜 뜨는 것만 추렸어요. 올해 인기 영화·애니 캐릭터부터 아이들이 좋아하는 웃기고 유니크한 코스튬까지 — 취향만 고르면 딱 맞는 캐릭터가 나와요. 요즘 한국민속촌에서 난리 난 '귀신사바' 귀신들(묘귀·살귀·식귀)도 새로 넣었어요.</p>
+    <h1>할로윈 코스튬,<br><span>뭘 입을지 골라드려요</span></h1>
+    <p class="lead">인기 캐릭터 42개의 <b>실제 착용 사진 · 준비물 · 예산</b>을 한곳에 모았어요. 뭘 입을지 모르겠다면, 아래에서 <b>질문 3개</b>에만 답하세요 — 누구랑 가는지, 어떤 분위기를 원하는지, 예산은 얼마인지 고르면 딱 맞는 코스튬 3개를 골라드려요.</p>
+    <div class="hero-ctas">
+      <a class="hero-cta primary" href="#finder">✨ 질문 3개로 코스튬 추천받기</a>
+      <a class="hero-cta ghost" href="#gridTitle">🎃 전체 42개 바로 보기</a>
+    </div>
+    <div class="deadline" id="deadlineBanner">⏰ 할로윈까지 얼마 안 남았어요 — 해외배송은 지금 주문해야 안전해요</div><br>
     <a class="tip-jump" href="#tips">💡 코스튬 꿀팁 먼저 보기 ↓</a>
     <div class="stats">
       <div class="stat"><strong>42개</strong><small>추천 캐릭터</small></div>
@@ -152,11 +254,12 @@ body{padding-bottom:58px}
 </header>
 
 <main class="wrap">
-  <div class="adfit-top adfit-leader"><ins class="kakao_ad_area" style="display:none;"
-data-ad-unit = "DAN-CmYsj51KjByZCupy"
-data-ad-width = "728"
-data-ad-height = "90"></ins></div>
-    <div class="toolbar">
+  <section class="steps" aria-label="이용 방법">
+    <div class="step"><span class="n">1</span><div><b>고르기</b><span>아래 질문 3개에 답하거나, 운명 룰렛·카테고리로 후보를 좁혀요</span></div></div>
+    <div class="step"><span class="n">2</span><div><b>확인하기</b><span>카드를 누르면 착용 사진 3장·준비물·메이크업 포인트가 열려요</span></div></div>
+    <div class="step"><span class="n">3</span><div><b>주문하기</b><span>준비물은 팝업의 쿠팡 버튼으로 바로 검색해서 사요</span></div></div>
+  </section>
+  <div class="toolbar">
     <div class="search"><input id="q" type="search" placeholder="캐릭터 검색 — 예: 구미호, 마녀, 커플, 저승사자" aria-label="코스튬 검색"></div>
     <button class="sharebtn" id="shareBtn" type="button">🔗 친구에게 공유하기</button>
     <div class="filters" id="filters" role="tablist">
@@ -172,10 +275,46 @@ data-ad-height = "90"></ins></div>
       <button class="chip korea" data-f="korea">🇰🇷 한국 괴물</button>
     </div>
   </div>
+  <div class="sortbar">
+      <select id="sortSel" aria-label="정렬 방식">
+        <option value="rec">정렬: 추천순</option>
+        <option value="easy">쉬운 순 (난이도 낮은 순)</option>
+        <option value="cheap">예산 낮은 순</option>
+        <option value="hard">난이도 높은 순 (본격파)</option>
+      </select>
+      <button type="button" class="togglebtn" id="favOnlyBtn" aria-pressed="false">❤️ 찜한 것만 보기</button>
+      <button type="button" class="randombtn" id="randomBtn">🎰 운명 룰렛 돌리기</button>
+  </div>
 
-  <div class="sectionhead"><div><h2 id="gridTitle">전체 추천</h2><p id="gridSub">카드를 누르면 준비물·메이크업 포인트와 쿠팡 구매 링크까지 볼 수 있어요. 전 캐릭터 상세 팝업에 실제 참고 사진 3장(착용샷·메이크업·제품샷)이 들어 있어요</p></div><p id="countText"></p></div>
+  <section class="finder" id="finder">
+    <h2>✨ 뭘 입을지 모르겠다면,<br>질문 3개로 추천받기</h2>
+    <p>42개 중에서 뭘 골라야 할지 막막할 때 쓰는 기능이에요. 아래 질문 3개에 하나씩 답하고 맨 아래 버튼을 누르면, 고른 조건에 맞는 코스튬 <b>3개를 추천</b>해 드려요. 추천 결과에서 마음에 드는 걸 누르면 착용 사진·준비물까지 바로 볼 수 있어요.</p>
+    <div class="finder-how" aria-hidden="true"><span><b>1단계</b>질문 3개에 답하기</span><span><b>2단계</b>아래 버튼 누르기</span><span><b>3단계</b>추천 3개 확인하기</span></div>
+    <div class="finder-q"><b>질문 1. 누구랑 같이 가나요?</b><span class="finder-q-hint">혼자 가는지, 여럿이 맞춰 입을 건지 알려주세요</span><div class="finder-opts" data-q="who">
+      <button type="button" class="fopt on" data-v="solo">혼자 가요</button>
+      <button type="button" class="fopt" data-v="group">커플·친구랑 가요</button>
+      <button type="button" class="fopt" data-v="family">가족·아이랑 가요</button>
+    </div></div>
+    <div class="finder-q"><b>질문 2. 어떤 분위기로 입고 싶어요?</b><span class="finder-q-hint">파티에서 어떤 모습으로 보이고 싶은지 골라주세요</span><div class="finder-opts" data-q="mood">
+      <button type="button" class="fopt on" data-v="pretty">✨ 예쁘게·멋지게</button>
+      <button type="button" class="fopt" data-v="scary">👻 무섭게</button>
+      <button type="button" class="fopt" data-v="funny">😂 웃기게</button>
+      <button type="button" class="fopt" data-v="trend">🔥 올해 유행하는 걸로</button>
+      <button type="button" class="fopt" data-v="korea">🇰🇷 한국 귀신·괴물</button>
+      <button type="button" class="fopt" data-v="anime">🎌 애니·만화 캐릭터</button>
+    </div></div>
+    <div class="finder-q"><b>질문 3. 코스튬에 얼마까지 쓸 수 있어요?</b><span class="finder-q-hint">의상·소품을 사는 데 쓸 수 있는 예산이에요</span><div class="finder-opts" data-q="budget">
+      <button type="button" class="fopt on" data-v="low">3만원 이하</button>
+      <button type="button" class="fopt" data-v="mid">3~6만원</button>
+      <button type="button" class="fopt" data-v="any">예산 상관없어요</button>
+    </div></div>
+    <button type="button" class="finder-go" id="finderGo">위 조건으로 코스튬 3개 추천받기 →</button>
+    <div class="finder-results" id="finderResults"></div>
+  </section>
+
+  <div class="sectionhead"><div><h2 id="gridTitle">전체 추천</h2><p id="gridSub">카드를 누르면 준비물·메이크업·참고 사진 3장이 열려요. 마음에 드는 건 🤍 찜해두고 한 번에 비교하세요.</p></div><p id="countText"></p></div>
   <div class="grid" id="grid"></div>
-  <div class="empty" id="empty">검색 결과가 없어요. 다른 키워드로 찾아보세요 — 예: 귀신, 마녀, 커플</div>
+  <div class="empty" id="empty">검색 결과가 없어요. 다른 키워드로 찾아보세요 — 예: 귀신, 마녀, 커플<br><br><button type="button" class="randombtn" id="emptyReset">전체 42개 다시 보기</button></div>
 
   <section class="ad-section" aria-label="광고">
     <span class="ad-label">AD · 광고</span>
@@ -242,10 +381,13 @@ data-ad-height = "90"></ins></div>
   <footer>트렌드 근거: Google Frightgeist 2026, Spirit Halloween 2026 트렌드, 인스타그램 할로윈 코스튬 릴스 반응 기준 (2026년 10월 취합). 성인 인기 1위 마녀 약 480만 명, 2위 뱀파이어 약 420만 명, 아동 1위 스파이더맨 약 460만 명 추산 포함. 가격·난이도는 국내 구매 기준 대략적인 가이드예요.<br>카드 사진: 각 캐릭터의 실제 코스프레·코스튬·분장·제품 사진으로, Pinterest·Etsy·10x10·인벤·서울신문·파티해·USJ·Vecteezy·Shopee·HalloweenCostumes·Amazon·마이데일리 등 공개 웹 이미지에서 가져왔어요. 민속촌 귀신 4종(묘귀·살귀·식귀·암행어사) 사진은 미디어모·트립플러스·네이버 블로그의 실제 한국민속촌 귀신 배우·공포체험 세트 사진과 고양이 분장·사극 의상 착용샷이에요. 모든 캐릭터의 상세 팝업에 참고 사진 3장이 들어 있어요. (사진을 쿠팡에서 가져온 건 아니에요.) 준비물은 각 카드 상세에서 쿠팡 검색으로 바로 연결돼요.<br>꿀팁·민속촌 참고 자료: <a href="https://www.newswire.co.kr/newsRead.php?no=1042137" target="_blank" rel="noopener">한국민속촌 '귀신사바 귀신놀이' 공식 보도자료 (뉴스와이어)</a> · <a href="https://tjinmoney.com/korean-folk-village-horror/" target="_blank" rel="noopener">민속촌 공포체험 살귀옥·혈안식귀·심야귀행 정리</a> · <a href="https://www.asiae.co.kr/article/2026101308365573482" target="_blank" rel="noopener">민속촌 '귀신 참교육' 화제 (아시아경제)</a> · <a href="https://globalcelebritymeter.com/lifestyle/halloween-costumes-2026-celebrity-looks/" target="_blank" rel="noopener">2026 셀럽 코스튬 가이드 — 3문 체크·생존 키트 (Global Celebrity Meter)</a> · <a href="https://www.creativecostumes.com.au/news/best-halloween-costumes-for-adults/" target="_blank" rel="noopener">성인 코스튬 베스트 — 좀비 DIY (Creative Costumes AU)</a> · <a href="https://vadbav.com/tiktok-halloween-makeup-only-costume-ideas-2026" target="_blank" rel="noopener">틱톡 메이크업 온리 코스튬 트렌드 2026</a> · <a href="https://www.onecklace.com/blog/halloween-2021-ideas/" target="_blank" rel="noopener">DIY 코스튬 — 옷장 조립·재활용 팁 (Onecklace)</a> · <a href="https://www.rhodeahead.com/health/11-tips-safe-halloween" target="_blank" rel="noopener">할로윈 안전 수칙 (FDA·CPSC·CDC 가이드)</a> · <a href="https://getblys.com/ca/blog/last-minute-halloween-beauty-hacks/" target="_blank" rel="noopener">막판 메이크업 해법 (가짜피·상처 DIY, 세팅 샌드위치)</a> · <a href="https://floraontrip.com/2025-%ED%95%A0%EB%A1%9C%EC%9C%88-%EC%BD%94%EC%8A%A4%ED%8A%AC-%EB%8C%80%EC%97%AC-%EC%9C%A0%EC%95%84%EB%B6%80%ED%84%B0-%EC%BB%A4%ED%94%8C%EA%B9%8C%EC%A7%80-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4/" target="_blank" rel="noopener">코스튬 대여 가이드</a> · <a href="http://restart7021.blogspot.com/2026/10/2026.html" target="_blank" rel="noopener">2026 핼러윈 준비법 (다이소·렌즈·인파 안전)</a></footer>
 </main>
 
-<div class="adfit-sticky"><ins class="kakao_ad_area" style="display:none;"
-data-ad-unit = "DAN-CayY7N719gcfGKmK"
-data-ad-width = "320"
-data-ad-height = "50"></ins></div>
+<nav class="bottombar" aria-label="빠른 액션">
+  <button type="button" class="bb-main" id="bbFinder">✨ 질문 3개로 추천받기</button>
+  <button type="button" class="bb-sub" id="bbFavs">❤️ 찜 <span id="bbFavCount">0</span>개 보기</button>
+</nav>
+
+<div class="rmodal" id="rouletteModal" aria-hidden="true"><div class="rbox" id="rBox" role="dialog" aria-modal="true" aria-label="오늘의 운명 코스튬 룰렛"><button class="rclose" id="rClose" aria-label="룰렛 닫기">✕</button><h3 class="rtitle">🎰 오늘의 <span>운명 코스튬</span> 룰렛</h3><p class="rsub">고민은 룰렛이 끝내드려요 — 지금 골라둔 카테고리 안에서 뽑아요</p><div class="rframe"><div class="bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="rwin" id="rWin"><img id="rImg" src="assets/img/huntrix.jpg" alt="룰렛 코스튬 사진"><div class="rstamp" id="rStamp">운명 확정!</div></div><div class="bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="rname" id="rName">룰렛을 돌려보세요!</div><div class="rmeta" id="rMeta">어떤 코스튬이 오늘의 운명이 될까요?</div><div class="rbtns"><button type="button" class="rbtn spin" id="rSpin">🎰 룰렛 돌리기</button><button type="button" class="rbtn detail" id="rDetail" style="display:none">자세히 보기 →</button></div></div></div>
+
 <div class="modal" id="modal" aria-hidden="true"><div class="sheet" role="dialog" aria-modal="true"><div class="sheet-visual" id="mVisual"><img class="ph" id="mImg" alt=""><button class="close" id="closeBtn" aria-label="닫기">✕</button><span class="imgcount" id="mCount"></span><button class="navbtn prev" id="mPrev" aria-label="이전 사진">‹</button><button class="navbtn next" id="mNext" aria-label="다음 사진">›</button><span class="sheet-emoji" id="mEmoji"></span></div><div class="sheet-body" id="mBody"></div></div></div>
 
 <script>
@@ -293,17 +435,22 @@ var DATA=[
 {id:"taco",name:"타코 & 음식 가족 세트",origin:"유니크 푸드 코스튬",emoji:"🌮",grad:"linear-gradient(135deg,#F59E0B,#84CC16)",cats:["kids","funny","group"],badge:"신규 · 가족 웃김 1위",diff:1,budget:"2~5만원",people:"가족·아이",desc:"아이는 타코, 부모는 케첩·머스타드병으로 맞추는 가족 세트. 해외에서 매년 바이럴되는 조합인데 한국 가족 사진에서도 반응이 폭발적이에요.",items:["타코 의상 (아이)","케첩·머스타드 의상 (부모)","감자튀김 소품 (선택)"],makeup:"필요 없음.",point:"온 가족이 음식으로 줄 서 있는 사진이 포인트. 반려견 핫도그까지 하면 완벽해요.",gallery:["taco-2","taco-3"]},
 {id:"amongus",name:"어몽어스 크루원",origin:"어몽어스",emoji:"🛸",grad:"linear-gradient(135deg,#DC2626,#2563EB)",cats:["kids","funny","group"],badge:"신규 · 색깔별 그룹",diff:1,budget:"3~5만원",people:"아이·친구 그룹",desc:"빨강·파랑·노랑, 색만 다르게 맞추면 바로 크루 완성. 한 명은 임포스터로 숨어 있는 설정 사진을 찍으면 게임 팬들이 열광해요.",items:["크루원 점프수트 또는 풍선탈 (색상별)","미니 배낭 소품","모자 소품 (계란후라이·잎사귀 등)"],makeup:"필요 없음. 헬멧 바이저가 얼굴을 대신해요.",point:"'○○가 임포스터 같다' 투표 포즈 사진이 포인트. 색을 다 다르게 맞추는 게 핵심.",gallery:["amongus-2","amongus-3"]}
 ];
-var favs={}; var currentFilter="all";
+var favs={}; var currentFilter="all"; var sortMode="rec"; var favOnly=false; var finderSel={who:"solo",mood:"pretty",budget:"low"};
 var SHOP={huntrix:"케이팝 데몬 헌터스 코스튬",niki:"할로윈 레드 코스튬 의상 가짜피",pennywise:"페니와이즈 코스튬",odyssey:"그리스 신 코스튬 토가 월계관",buddy:"유니콘 코스튬 잠옷",witch:"마녀 코스튬 의상 모자",vampire:"뱀파이어 코스튬 망토 송곳니",wednesday:"웬즈데이 아담스 코스튬 원피스",batman:"배트맨 코스튬",spiderman:"스파이더맨 코스튬 전신수트",mario:"슈퍼마리오 코스튬",thriller:"마이클잭슨 스릴러 빨간 자켓",wicked:"위키드 엘파바 글린다 코스튬",toystory:"토이스토리 우디 버즈 코스튬",pun:"할로윈 커플 코스튬 세트",gumiho:"구미호 코스튬 여우귀 꼬리",dokkaebi:"도깨비 가면 방망이",cheonyo:"처녀귀신 코스튬 흰 소복 긴 가발",jeoseung:"저승사자 코스튬 갓 검정 도포",mul:"귀신 코스튬 긴 가발 흰 옷",dalgyal:"민낯 마스크 전신 타이즈 코스튬",jangsan:"호랑이 코스튬 귀 꼬리 소품",kingdom:"조선 좀비 코스튬 갓 한복 가짜피",myogwi:"고양이귀 머리띠 고양이 분장 소품 한복",salgui:"조선 죄수복 코스튬 가짜피 상처 분장",sikgwi:"빨간 컬러렌즈 귀신 코스튬 흰 한복",eosa:"암행어사 코스튬 갓 도포 마패",gojo:"주술회전 고죠 사토루 코스프레 의상 가발 안대",nezuko:"귀멸의 칼날 네즈코 코스프레 기모노",luffy:"원피스 루피 기어5 코스프레 의상",pikachu:"피카츄 코스튬 아동 할로윈",insideout:"인사이드 아웃 코스튬 슬픔이 기쁨이 불안이",moana:"모아나 코스튬 아동 드레스",elsa:"엘사 드레스 코스튬 아동 겨울왕국",harry:"해리포터 코스튬 아동 호그와트 로브",minecraft:"마인크래프트 크리퍼 코스튬 아동",hachuping:"하츄핑 코스튬 드레스 여아 티니핑",capybara:"카피바라 코스튬 인형탈",dino:"공룡 코스튬 풍선 티라노 아동",astronaut:"우주비행사 코스튬 아동 우주복",taco:"타코 코스튬 가족 할로윈 음식",amongus:"어몽어스 코스튬 아동"};
 function coupangLink(c){return "https://www.coupang.com/np/search?q="+encodeURIComponent(SHOP[c.id]||(c.name+" 코스튬"))}
 function dots(n){var s="";for(var i=1;i<=5;i++)s+=i<=n?"●":"○";return s}
+function budgetNum(c){var m=(c.budget||"").match(/(\d+)/);return m?parseInt(m[1],10):99}
 function render(){
   var q=(document.getElementById("q").value||"").trim().toLowerCase();
   var list=DATA.filter(function(c){
     var okF=currentFilter==="all"||c.cats.indexOf(currentFilter)>=0;
     var okQ=!q||(c.name+" "+c.origin+" "+c.desc+" "+c.people).toLowerCase().indexOf(q)>=0;
-    return okF&&okQ;
+    var okFav=!favOnly||favs[c.id];
+    return okF&&okQ&&okFav;
   });
+  if(sortMode==="easy")list.sort(function(a,b){return a.diff-b.diff||budgetNum(a)-budgetNum(b)});
+  else if(sortMode==="cheap")list.sort(function(a,b){return budgetNum(a)-budgetNum(b)||a.diff-b.diff});
+  else if(sortMode==="hard")list.sort(function(a,b){return b.diff-a.diff});
   var grid=document.getElementById("grid"); grid.innerHTML="";
   list.forEach(function(c){
     var btn=document.createElement("button"); btn.className="card";
@@ -316,7 +463,7 @@ function render(){
   var titles={all:"전체 추천",trend:"🔥 2026 트렌드",scary:"👻 무섭게 가고 싶다면",pretty:"✨ 예쁘게·멋지게",funny:"😂 웃기게·밈으로",group:"👥 커플·그룹 추천",classic:"🏆 실패 없는 클래식",anime:"🎌 애니·만화 캐릭터",kids:"🧒 아이·키즈 추천",korea:"🇰🇷 한국 괴물 & 민속촌 귀신"};
   document.getElementById("gridTitle").textContent=titles[currentFilter]||"추천";
 }
-function toggleFav(id){ favs[id]=!favs[id]; var n=Object.keys(favs).filter(function(k){return favs[k]}).length; document.getElementById("favCount").textContent=n+"개"; render(); }
+function toggleFav(id){ favs[id]=!favs[id]; var n=Object.keys(favs).filter(function(k){return favs[k]}).length; document.getElementById("favCount").textContent=n+"개"; var bb=document.getElementById("bbFavCount"); if(bb)bb.textContent=n; render(); }
 var galState={list:[],idx:0,name:""};
 function setImg(i){
   if(!galState.list.length)return;
@@ -336,7 +483,7 @@ function openModal(c){
   document.getElementById("mNext").style.display=multi?"flex":"none";
   document.getElementById("mCount").textContent="1 / "+gal.length;
   var galHtml=gal.length>1?'<h5>📷 참고 사진 '+gal.length+'장 — 눌러서 크게 보기</h5><div class="thumbs">'+gal.map(function(g,i){return '<button type="button" class="thumb'+(i===0?" on":"")+'" data-g="'+g+'" aria-label="'+c.name+' 참고 사진 '+(i+1)+' 크게 보기"><img src="assets/img/'+g+'.jpg" alt=""></button>'}).join("")+'</div>':"";
-  document.getElementById("mBody").innerHTML='<span class="cat">'+c.origin+'</span><h3>'+c.emoji+' '+c.name+'</h3><p>'+c.desc+'</p>'+galHtml+'<div class="kv"><div><small>난이도</small><strong>'+dots(c.diff)+' ('+c.diff+'/5)</strong></div><div><small>예상 예산</small><strong>'+c.budget+'</strong></div><div><small>추천 인원</small><strong>'+c.people+'</strong></div><div><small>분류</small><strong>'+(c.kr?"한국 괴물":"일반")+'</strong></div></div><h5>🛒 준비물</h5><ul>'+c.items.map(function(i){return "<li>"+i+"</li>"}).join("")+'</ul><a class="shopbtn" href="'+coupangLink(c)+'" target="_blank" rel="noopener">🛒 쿠팡에서 준비물 찾기 <small>쿠팡 검색으로 이동해요</small></a><h5>💄 메이크업 포인트</h5><p>'+c.makeup+'</p><h5>📸 인스타 포인트</h5><p>'+c.point+'</p>';
+  document.getElementById("mBody").innerHTML='<span class="cat">'+c.origin+'</span><h3>'+c.emoji+' '+c.name+'</h3><p>'+c.desc+'</p>'+galHtml+'<div class="kv"><div><small>난이도</small><strong>'+dots(c.diff)+' ('+c.diff+'/5)</strong></div><div><small>예상 예산</small><strong>'+c.budget+'</strong></div><div><small>추천 인원</small><strong>'+c.people+'</strong></div><div><small>분류</small><strong>'+(c.kr?"한국 괴물":"일반")+'</strong></div></div><h5>🛒 준비물</h5><ul>'+c.items.map(function(i){return "<li>"+i+"</li>"}).join("")+'</ul><a class="shopbtn" href="'+coupangLink(c)+'" target="_blank" rel="noopener">🛒 쿠팡에서 준비물 찾기 <small>쿠팡 검색으로 이동해요</small></a><p style="font-size:13px">💡 팁: 쿠팡에서 위 준비물을 하나씩 검색하면 제일 빨라요. 비교 중이면 팝업을 닫고 🤍 찜해두세요 — 하단 바에서 찜한 것만 모아 볼 수 있어요.</p><h5>💄 메이크업 포인트</h5><p>'+c.makeup+'</p><h5>📸 인스타 포인트</h5><p>'+c.point+'</p>';
   var thumbs=document.querySelectorAll("#mBody .thumbs .thumb");
   for(var t=0;t<thumbs.length;t++){ (function(el,k){ el.addEventListener("click",function(){ setImg(k); }); })(thumbs[t],t); }
   document.getElementById("modal").classList.add("open");
@@ -348,8 +495,51 @@ document.getElementById("mNext").addEventListener("click",function(){ setImg(gal
 document.getElementById("closeBtn").addEventListener("click",closeModal);
 document.getElementById("modal").addEventListener("click",function(e){ if(e.target===this) closeModal(); });
 document.getElementById("q").addEventListener("input",render);
-document.getElementById("filters").addEventListener("click",function(e){ if(!e.target.dataset.f)return; currentFilter=e.target.dataset.f; var chips=document.querySelectorAll(".chip"); for(var i=0;i<chips.length;i++)chips[i].classList.toggle("active",chips[i]===e.target); render(); });
-(function(){ var target=new Date("2026-10-31T00:00:00+09:00"); var now=new Date(); var d=Math.ceil((target-now)/86400000); document.getElementById("dday").textContent=d>0?"D-"+d:d===0?"D-DAY · 할로윈 당일!":"할로윈 종료"; })();
+document.getElementById("filters").addEventListener("click",function(e){ if(!e.target.dataset.f)return; currentFilter=e.target.dataset.f; favOnly=false; var fb=document.getElementById("favOnlyBtn"); fb.classList.remove("on"); fb.setAttribute("aria-pressed","false"); var chips=document.querySelectorAll(".chip"); for(var i=0;i<chips.length;i++)chips[i].classList.toggle("active",chips[i]===e.target); render(); });
+document.getElementById("sortSel").addEventListener("change",function(){ sortMode=this.value; render(); });
+document.getElementById("favOnlyBtn").addEventListener("click",function(){ favOnly=!favOnly; this.classList.toggle("on",favOnly); this.setAttribute("aria-pressed",favOnly?"true":"false"); render(); if(favOnly)document.getElementById("gridTitle").scrollIntoView({behavior:"smooth",block:"start"}); });
+var rState={spinning:false,target:null,raf:null};
+var audioCtx=null;
+function rBeep(freq,dur,delay,vol){ try{ if(!audioCtx){ var AC=window.AudioContext||window.webkitAudioContext; if(!AC)return; audioCtx=new AC(); } if(audioCtx.state==="suspended")audioCtx.resume(); var t0=audioCtx.currentTime+(delay||0); var o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type="square"; o.frequency.setValueAtTime(freq,t0); g.gain.setValueAtTime(vol||0.03,t0); g.gain.exponentialRampToValueAtTime(0.0001,t0+dur); o.connect(g); g.connect(audioCtx.destination); o.start(t0); o.stop(t0+dur+0.03); }catch(e){} }
+function rPool(){ var pool=DATA.slice(); if(currentFilter!=="all")pool=pool.filter(function(c){return c.cats.indexOf(currentFilter)>=0}); return pool.length?pool:DATA.slice(); }
+function rShowFace(c){ var img=document.getElementById("rImg"); img.src="assets/img/"+c.id+".jpg"; img.alt=c.name+" 코스튬 사진"; document.getElementById("rName").textContent=c.emoji+" "+c.name; document.getElementById("rMeta").textContent=c.origin+" · "+c.budget+" · "+c.people; }
+function rConfetti(){ var box=document.getElementById("rBox"); var colors=["#FFB703","#FF6D00","#F72C8B","#7B2FF7","#2A9D2A","#FFFFFF"]; for(var i=0;i<46;i++){ var p=document.createElement("span"); p.className="confetti"; p.style.left=(Math.random()*100)+"%"; p.style.background=colors[i%colors.length]; p.style.animationDuration=(0.9+Math.random()*1.0)+"s"; p.style.animationDelay=(Math.random()*0.3)+"s"; box.appendChild(p); (function(el){ setTimeout(function(){ if(el.parentNode)el.parentNode.removeChild(el); },3200); })(p); } }
+function rFinish(){ rState.spinning=false; if(!rState.target)return; rShowFace(rState.target); var rbox=document.getElementById("rBox"); rbox.classList.remove("live"); rbox.classList.add("jackpot"); var win=document.getElementById("rWin"); win.classList.remove("spinning"); win.classList.add("done"); document.getElementById("rStamp").classList.add("show"); var nm=document.getElementById("rName"); nm.classList.remove("pop"); void nm.offsetWidth; nm.classList.add("pop"); document.getElementById("rDetail").style.display="block"; var sp=document.getElementById("rSpin"); sp.textContent="🔁 한 번 더 돌리기"; sp.disabled=false; rConfetti(); rBeep(523,0.12,0,0.05); rBeep(659,0.12,0.1,0.05); rBeep(784,0.14,0.2,0.05); rBeep(1047,0.28,0.3,0.06); }
+function rSpin(){ if(rState.spinning)return; var pool=rPool(); rState.target=pool[Math.floor(Math.random()*pool.length)]; var rbox=document.getElementById("rBox"); rbox.classList.remove("jackpot"); rbox.classList.add("live"); var win=document.getElementById("rWin"); win.classList.remove("done"); document.getElementById("rStamp").classList.remove("show"); document.getElementById("rDetail").style.display="none"; var sp=document.getElementById("rSpin"); sp.textContent="🎲 돌아가는 중…"; sp.disabled=true; var reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches; if(reduced){ rFinish(); return; } rState.spinning=true; win.classList.add("spinning"); var start=performance.now(),dur=2500,last=0; function frame(now){ var t=(now-start)/dur; if(t>=1){ rFinish(); return; } var iv=55+Math.pow(t,2.4)*360; if(now-last>=iv){ last=now; rShowFace(pool[Math.floor(Math.random()*pool.length)]); rBeep(520+t*340,0.045,0,0.02); } rState.raf=requestAnimationFrame(frame); } rState.raf=requestAnimationFrame(frame); }
+function openRoulette(){ var m=document.getElementById("rouletteModal"); m.classList.add("open"); m.setAttribute("aria-hidden","false"); if(!rState.target){ var pool=rPool(); rShowFace(pool[Math.floor(Math.random()*pool.length)]); } }
+function closeRoulette(){ if(rState.raf)cancelAnimationFrame(rState.raf); rState.spinning=false; var rbox=document.getElementById("rBox"); rbox.classList.remove("live"); rbox.classList.remove("jackpot"); var sp=document.getElementById("rSpin"); sp.disabled=false; if(rState.target)sp.textContent="🔁 한 번 더 돌리기"; var m=document.getElementById("rouletteModal"); m.classList.remove("open"); m.setAttribute("aria-hidden","true"); document.getElementById("rWin").classList.remove("spinning"); }
+document.getElementById("randomBtn").addEventListener("click",function(){ openRoulette(); rSpin(); });
+document.getElementById("rSpin").addEventListener("click",rSpin);
+document.getElementById("rClose").addEventListener("click",closeRoulette);
+document.getElementById("rouletteModal").addEventListener("click",function(e){ if(e.target===this)closeRoulette(); });
+document.getElementById("rDetail").addEventListener("click",function(){ var c=rState.target; closeRoulette(); if(c)openModal(c); });
+document.getElementById("emptyReset").addEventListener("click",function(){ document.getElementById("q").value=""; currentFilter="all"; favOnly=false; document.getElementById("favOnlyBtn").classList.remove("on"); var chips=document.querySelectorAll(".chip"); for(var i=0;i<chips.length;i++)chips[i].classList.toggle("active",chips[i].dataset.f==="all"); render(); });
+document.getElementById("bbFinder").addEventListener("click",function(){ document.getElementById("finder").scrollIntoView({behavior:"smooth",block:"start"}); });
+document.getElementById("bbFavs").addEventListener("click",function(){ if(!favOnly){ favOnly=true; document.getElementById("favOnlyBtn").classList.add("on"); } render(); document.getElementById("gridTitle").scrollIntoView({behavior:"smooth",block:"start"}); });
+var finderWrap=document.getElementById("finder");
+finderWrap.addEventListener("click",function(e){ var b=e.target.closest?e.target.closest(".fopt"):null; if(!b||!b.dataset||!b.dataset.v)return; var group=b.parentElement; var q=group.dataset.q; finderSel[q]=b.dataset.v; var opts=group.querySelectorAll(".fopt"); for(var i=0;i<opts.length;i++)opts[i].classList.toggle("on",opts[i]===b); });
+document.getElementById("finderGo").addEventListener("click",function(){
+  var who=finderSel.who, mood=finderSel.mood, bud=finderSel.budget;
+  function score(c){
+    var s=0;
+    if(mood==="korea"){ if(c.cats.indexOf("korea")>=0)s+=10; } else if(mood==="anime"){ if(c.cats.indexOf("anime")>=0)s+=10; } else if(c.cats.indexOf(mood)>=0)s+=10;
+    if(who==="group"){ if(c.cats.indexOf("group")>=0)s+=5; if((c.people||"").indexOf("커플")>=0||(c.people||"").indexOf("그룹")>=0)s+=3; }
+    if(who==="family"){ if(c.cats.indexOf("kids")>=0)s+=6; if((c.people||"").indexOf("가족")>=0||(c.people||"").indexOf("아이")>=0)s+=3; }
+    if(who==="solo"){ if((c.people||"").indexOf("솔로")>=0)s+=4; }
+    var bn=budgetNum(c);
+    if(bud==="low")s+= bn<=2?5:bn<=3?2:-2;
+    if(bud==="mid")s+= (bn>=3&&bn<=6)?4:1;
+    if(c.hot)s+=1;
+    return s;
+  }
+  var ranked=DATA.slice().sort(function(a,b){return score(b)-score(a)}).slice(0,3);
+  var box=document.getElementById("finderResults");
+  box.innerHTML="<h3>🎃 고른 조건에 맞는 추천 코스튬 3개예요</h3>"+ranked.map(function(c){return '<button type="button" class="fresult" data-id="'+c.id+'"><img src="assets/img/'+c.id+'.jpg" alt=""><span><b>'+c.emoji+' '+c.name+'</b><span>난이도 '+c.diff+'/5 · '+c.budget+' · '+c.people+' — 눌러서 준비물·사진 보기</span></span></button>'}).join("")+'<p class="finder-empty">눌러보면 준비물과 착용 사진을 볼 수 있어요. 마음에 안 들면 위 질문에서 답을 바꿔 다시 추천받아 보세요.</p>';
+  box.classList.add("show");
+  box.querySelectorAll(".fresult").forEach(function(el){ el.addEventListener("click",function(){ var c=DATA.filter(function(x){return x.id===el.dataset.id})[0]; if(c)openModal(c); }); });
+  box.scrollIntoView({behavior:"smooth",block:"nearest"});
+});
+(function(){ var target=new Date("2026-10-31T00:00:00+09:00"); var now=new Date(); var d=Math.ceil((target-now)/86400000); document.getElementById("dday").textContent=d>0?"D-"+d:d===0?"D-DAY · 할로윈 당일!":"할로윈 종료"; var dl=document.getElementById("deadlineBanner"); if(dl){ if(d>7)dl.textContent="⏰ 할로윈 D-"+d+" — 지금 고르면 배송 여유 있어요. 인기 캐릭터부터 품절돼요"; else if(d>0)dl.textContent="⏰ 할로윈 D-"+d+" — 해외배송은 마감 임박! 쿠팡·당일배송 위주로 고르세요"; else if(d===0)dl.textContent="🎃 오늘이 할로윈! 집에 있는 옷 + 분장으로 바로 되는 코스튬부터 보세요"; else dl.textContent="🎃 할로윈이 지났어요 — 내년을 위해 찜해두고 사진으로 미리 골라보세요"; } })();
 render();
 </script>
 <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
@@ -366,10 +556,15 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
   } catch(e) {}
 });
 setTimeout(() => {
-  document.querySelectorAll('.adfit-wrap,.adfit-top,.adfit-sticky,.adfit-banner,.ad-box').forEach(el => {
-    const ins = el.querySelector('ins.kakao_ad_area');
-    const filled = el.querySelector('iframe') || (ins && ins.offsetHeight > 10);
-    if (!filled) el.style.display = 'none';
+  document.querySelectorAll('ins.kakao_ad_area').forEach(ins => {
+    const filled = (ins.parentElement && ins.parentElement.querySelector('iframe')) || ins.offsetHeight > 10;
+    if (!filled) {
+      let el = ins;
+      for (let i = 0; i < 3 && el.parentElement; i++) {
+        el = el.parentElement;
+        if ((el.className || '').toString().includes('ad')) { el.style.display = 'none'; break; }
+      }
+    }
   });
 }, 8000);
 </script>
