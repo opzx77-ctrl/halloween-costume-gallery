@@ -1,0 +1,25 @@
+{
+  "name": "할로윈 코스튬 추천 2026",
+  "short_name": "할로윈 코스튬",
+  "description": "트렌드·애니·영화·한국 괴물·민속촌 귀신 42종 카드 갤러리",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1A0F2E",
+  "theme_color": "#1A0F2E",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "og.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
